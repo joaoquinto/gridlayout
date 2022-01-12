@@ -85,3 +85,5 @@ Auto-fit ajuda na responsividade por se ajustar automaticamente
 [W3C](https://www.w3.org/TR/css-grid-1/#overview-placement)
 
 [grid-row-column-start-end vs grid-area e grid-template area](https://stackoverflow.com/questions/55213061/css-grid-grid-row-column-start-end-vs-grid-area-grid-template-area)
+
+[Origamid Documentação](https://www.origamid.com/projetos/css-grid-layout-guia-completo/)
