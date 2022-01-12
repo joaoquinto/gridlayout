@@ -3,10 +3,39 @@
 # Container
 
 ## grid-template-columns:
-> Cria e manipula a largura da coluna - Container
+> Cria colunas e manipula a largura da coluna - Container
+
+```css
+/* Cria 2 colunas com 1fr e 3 colunas com o min de 100px e o max de 1fr */
+.container{
+    display:grid;
+    grid-template-conlumns: 1fr 1fr repeat(3,minmax(100px,1fr));
+}
+
+/* 
+Cria e ajusta automaticamente as colunas com o min de 1fr e max de 2fr.
+
+auto-fit pode ser trocado pelo auto-fill, porém o auto-fill é preenchimento automático
+*/
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(1fr, 2fr))
+}
+
+```
 
 ## grid-template-rows:
-> Cria e manipula a altura do conteúdo - Container
+> Cria linhas e manipula a altura do conteúdo
+
+```css
+/* Cria 2 linhas de 1fr e cria 3 linhas com min 100px e max de 1fr */
+
+.container{
+    display: grid;
+    grid-template-rows:  1fr 1fr repeat(3,minmax(100px,1fr));
+}
+```
 
 ## auto-fit: propriedade do repeat()
 > Ajuste Automático
@@ -14,6 +43,18 @@
 ## auto-fill: propriedade do repeat()
 > Preenchimento Automático
 
+
+```css
+/* 
+Auto-fit ajuda na responsividade por se ajustar automaticamente
+*/
+.container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(1fr, 2fr));
+    grid-template-rows: repeat(4 ,100px);
+}
+
+```
 ## grid-template-areas:
 > Cria e nomeia as áreas do layout e só pode criar áreas dentro da grade explícita - Container
 
